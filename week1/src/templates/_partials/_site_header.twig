@@ -1,26 +1,30 @@
 <header id="site-header">
-	<section class="   w-screen box-border flex-column align-center">
-		<div class=" flex justify-around align-center mx-auto bg-plum-lightest pr-2 md:absolute md:right-2 md:top-2 md:bg-white">
+	<section class="box-border w-screen flex-column align-center">
+		<div class="flex justify-around pr-2 mx-auto align-center bg-plum-lightest md:absolute md:right-2 md:top-2 md:bg-white">
 			<a href="#" class="font-semibold text-plum ">CLIENTE PORTAL</a>
-			<div class="h-5 w-px bg-plum-light md:h-3 md:m-2"></div>
-			<a href="#" class="font-semibold text-plum  ">1-800-800-8990</a>
+			<div class="w-px h-5 bg-plum-light md:h-3 md:m-2"></div>
+			<a href="#" class="font-semibold text-plum ">1-800-800-8990</a>
 		</div>
 		<div
-			class=" flex justify-between  align-bottom  bg-white p-2  ">
+			class="flex justify-between p-2 align-bottom bg-white ">
 			{# Verificar altura #}
-      		<a href="#"><img
-			class="h-24" src="./img/logo.svg"></a>
+			<a href="#"><img class="h-24" src="./img/logo.svg"></a>
 
 			{# Parte do Hamburguer --> Ex:2 https://larainfo.com/blogs/tailwind-css-navbar-ui-example #}
-			<div class="hidden space-x-8 md:flex  items-center  self-end">
+			<div class="items-center self-end hidden space-x-8 md:flex">
 				<a href="#">Our Company</a>
 				<a href="#">Our Services</a>
-				<a class="btn bg-plum-gradient hover:bg-plum text-white font-bold p-5 rounded-md   " href="#">Schedule a Calll</a>
+				<a class="p-5 font-bold text-white rounded-md btn bg-plum-gradient hover:bg-plum " href="#">Schedule a Calll</a>
 
 			</div>
-			<div class="flex md:hidden w-8 self-end ">
-				<img src="./img/burguer.svg">
-			</div>
+			<button class="self-end md:hidden hamburger hamburger--squeeze " type="button">
+				<span class="hamburger-box">
+					<span class="hamburger-inner"></span>
+				</span>
+			</button>
+			{# <div class="flex self-end w-8 md:hidden ">
+							<img src="./img/burguer.svg">
+						</div> #}
 		</div>
 	</section>
 </header>
